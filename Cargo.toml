@@ -1,0 +1,13 @@
+[package]
+name = "tx-track-engine"
+version = "0.1.0"
+authors = ["Chris <chrisliupascal@gmail.com>"]
+edition = "2021"
+description = "Track and post-process transactions from different blockchains"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = { version = "0.11", features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+tokio = { version = "1.0", features = ["full"] }
